@@ -1,0 +1,22 @@
+
+<header>
+    <div class="navbar bg-primary d-flex shadow">
+        <div class="navbar-brand d-flex align-items-center">
+            <div [routerLink]="['/products']" class="brand">
+                <i class="fas fa-shopping-cart shadow fs-3 text-white ms-5">
+                </i>
+                <strong class="ms-2 text-uppercase text-white fs-3">Shopping-Cart</strong>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control border border-light border rounded-5" style="margin-left: 140px;width: 600px;" placeholder="Search Product">
+            </div>
+            <span class="search-icon">
+                <i class="fas fa-search text-primary"></i>
+            </span>
+        </div>
+        <button [routerLink]="['/cart']" class="btn btn-primary cart-button bg-white text-primary me-5">
+            <i class="fas fa-cart-plus fs-3"></i>
+            <div class="badge bg-danger">{{totalItem?totalItem:''}}</div>
+        </button>
+    </div>
+</header>

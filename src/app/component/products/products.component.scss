@@ -1,0 +1,21 @@
+
+.item{
+    text-align: center;
+    margin: 0 25px;
+}
+.item img{
+    width: 60px;
+}
+.item a:hover{
+    color: blue;
+}
+.card img{
+    transition: 500ms;
+}
+.card img:hover{
+    transition: 500ms;
+    transform: scale(1.1);
+}
+.card .btn:active{
+    background-color: green!important;
+}
