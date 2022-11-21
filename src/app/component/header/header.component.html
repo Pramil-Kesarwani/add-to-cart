@@ -8,7 +8,7 @@
                 <strong class="ms-2 text-uppercase text-white fs-3">Shopping-Cart</strong>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control border border-light border rounded-5" style="margin-left: 140px;width: 600px;" placeholder="Search Product">
+                <input type="text" [(ngModel)]="searchTerm" (keyup)="search($event)" class="form-control border border-light border rounded-5" style="margin-left: 140px;width: 600px;" placeholder="Search Product">
             </div>
             <span class="search-icon">
                 <i class="fas fa-search text-primary"></i>

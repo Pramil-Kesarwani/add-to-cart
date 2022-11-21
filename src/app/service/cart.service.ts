@@ -13,6 +13,7 @@ export class CartService {
   // cartItemList: string[] = [];
   cartItemList: any[] = [];
   productList = new BehaviorSubject<any>([]);
+  search = new BehaviorSubject<string>('');
 
   constructor(private http: HttpClient) { }
   getProducts() {
@@ -49,4 +50,10 @@ export class CartService {
     this.cartItemList = [];
     this.productList.next(this.cartItemList);
   }
+
+  // sendSearchTerms(value: string) {
+  //   console.log("search terms value---",value);
+    
+  //   this.search.next(value);
+  // }
 }
