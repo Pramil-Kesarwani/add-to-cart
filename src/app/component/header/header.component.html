@@ -10,13 +10,14 @@
             <div class="form-group">
                 <input type="text" [(ngModel)]="searchTerm" (keyup)="search($event)" class="form-control border border-light border rounded-5" style="margin-left: 140px;width: 600px;" placeholder="Search Product">
             </div>
-            <span class="search-icon">
+            <!-- <span class="search-icon">
                 <i class="fas fa-search text-primary"></i>
-            </span>
+            </span> -->
         </div>
         <button [routerLink]="['/cart']" class="btn btn-primary cart-button bg-white text-primary me-5">
             <i class="fas fa-cart-plus fs-3"></i>
             <div class="badge bg-danger">{{totalItem?totalItem:''}}</div>
         </button>
+        <button class="btn btn-danger me-5" [routerLink]="['/login']">Logout</button>
     </div>
 </header>
