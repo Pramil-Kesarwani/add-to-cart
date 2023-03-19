@@ -1,0 +1,13 @@
+{
+  "signupUsers": [
+    {
+      "username": "admin",
+      "phone": 123,
+      "role": "admin",
+      "email": "abc@gmail.com",
+      "password": "admin",
+      "isactive": true,
+      "id": 1
+    }
+  ]
+}
