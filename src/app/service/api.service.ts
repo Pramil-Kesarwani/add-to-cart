@@ -9,8 +9,8 @@ export class ApiService {
 
   constructor(private http:HttpClient) { }
 
-  // baseUrl = 'https://fakestoreapi.com/products';
-  baseUrl = 'https://api.escuelajs.co/api/v1/products';
+  baseUrl = 'https://fakestoreapi.com/products';
+  // baseUrl = 'https://api.escuelajs.co/api/v1/products';
 
   getProduct() {
     return this.http.get(this.baseUrl)
